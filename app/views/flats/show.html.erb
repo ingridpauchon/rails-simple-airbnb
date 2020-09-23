@@ -1,0 +1,13 @@
+<div class="container">
+<div class="card" style="width: 18rem;">
+  <div class="card-body">
+    <h5 class="card-title"><%= @flat.name %></h5>
+    <h6 class="card-subtitle mb-2 text-muted"><%= @flat.address %></h6>
+    <p class="card-text"><%= @flat.description %></p>
+    <p class="card-text"><%= @flat.price_per_night %></p>
+    <%= link_to 'back to all flats', flats_path %>
+    <%= link_to 'edit this flat', edit_flat_path(@flat) %>
+    <%= link_to 'delete this flat', flat_path(@flat), method: :delete, data: { confirm: "Are you sure?" } %>
+  </div>
+</div>
+</div>
